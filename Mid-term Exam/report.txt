@@ -1,0 +1,13 @@
+To run this code, you need to launch the server and applications through two terminals using the “py server.py” and “py client.py” commands, respectively. First one must be server application, so it would be able to listen for connections. Then client application starts communication with server. Client sends “ping” message with data and get “pong” response from server. RTT is calculated and then script choose maximum between RTT and default timeout.
+
+generate_data.py
+This file is responsible for generating new data for Excel sheet every time when we launch client application.
+
+sensor_data.py
+The sensor file is responsible for reading data from an Excel file “wheel_rotation_data.xlsx” and creating a list of tuples.
+
+server.py
+The server listens on 127.0.0.1:12345. After getting “ping” message it responds with “pong” message.
+client.py
+
+Client connect to server’s ip and port. It writes down time when sends “ping” message with data to a server and then calculate an RTT after receiving “pong” message. It chooses new optimal timeout. Also, I used a “sendall” method to send data, so all data would be sent even if it can’t be sent by one packet.
