@@ -13,4 +13,7 @@ Menu-form.py - code for printing options:
 Sending_files.py: Templates of functions for code to read and send such data as: images, csv and json files. 
 getting_files.py: Templates of functions for getting data from other clients and writing them down in the project folder.
 Propose your desired Python 3 based P2P system using TCP protocol and define all task descriptions.
-
+This is an example of peer2peer system that store addresses of clients on its server.
+![изображение](https://github.com/dogee4803/Computer_Networks_Course/assets/117568779/f4f51c16-84fc-48bd-8365-175d0dcf304a)
+If we try to ping from PC2 to PC5 we'll see that they connected to each other.
+![изображение](https://github.com/dogee4803/Computer_Networks_Course/assets/117568779/da0a13b1-b14f-437c-9fd3-90d4043ec0b9)
